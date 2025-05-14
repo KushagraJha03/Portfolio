@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushagra Jha | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTTXONtT+6ZgM+2D3NzJmMSDPOw0aLbN5ZCZxM9Bsz36zOhD9o9cWNRDbVqPhbSlcTntSU93Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #b6b4b4d8;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .animated-title {
+            font-size: 1.5rem;
+            color: #ffc107;
+            animation: fadeIn 2s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0.4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .social-btns .btn {
+            margin: 10px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card {
+            min-width: 200px;
+            max-width: 250px;
+            margin: 10px;
+        }
+
+        
+
+        /* Card hover scale */
+        .transition-card {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.transition-card:hover {
+    transform: scale(1.05);
+    background-color: #24292e;
+    color: whitesmoke;
+}
+        /* Button click color change */
+        .btn-github {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-github:hover {
+    background-color: #ecf0f3 !important;
+    color: rgb(36, 35, 35);
+    border-color: #f5f7f8 !important;
+    transform: scaleY(1.1); /* Increase height */
+}
+
+.btn-dark{
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    
+}
+        .btn-dark:hover{
+           background-color: rgb(57, 113, 57);
+           color: whitesmoke;
+        }
+        .btn-dark{
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.skill-card{
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.skill-card:hover{
+    background-color: #013359 !important;
+    color: rgb(238, 236, 236);
+    border-color: #f5f7f8 !important;
+    transform: scaleY(1.1);
+}
+
+        .scrolling-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+.card.skill-card {
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="header">
+        <BR>
+
+        <h1>KUSHAGRA JHA</h1>
+        <br>
+        <h2>I'm a Software Engineer | Data Analyst | Machine Learning Engineer | Business Analyst | Data Scientist</h2>
+        <p class="animated-title">Welcome to my portfolio!</p>
+        <div class="social-btns">
+            <a href="https://www.linkedin.com/in/kushagrajha03" target="_blank" class="btn btn-primary btn-github"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/KushagraJha03" target="_blank" class="btn btn-dark"><i
+                    class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="container py-4">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech CSE</strong> (2021-2025), Vellore Institute of Technology, CGPA: 8.35</li>
+            <li><strong>CBSE Class XII</strong> (2020-2021), Adarsh Public School – 80.2%</li>
+            <li><strong>CBSE Class X</strong> (2018-2019), Adarsh Public School – 80.8%</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="container py-4">
+        <h2>Experience</h2>
+        <h5>Engineers India Limited (Vocational Trainee)</h5>
+        <p>1 September 2023 – 29 September 2023</p>
+        <ul>
+            <li>Developed and managed CRUD operations for 5,000+ records using ASP.NET and C#, integrating SQL.</li>
+            <li>Collaborated with UI/UX teams for intuitive design.</li>
+            <li>Optimized SQL queries, improving efficiency.</li>
+        </ul>
+        <a class="btn btn-outline-primary"
+            href="https://drive.google.com/file/d/19dxE2ziT0lgF3TmbfMpCp_z07EKxp2aK/view?usp=drive_link"
+            target="_blank">View Certificate</a>
+    </section>
+
+    <!-- Development Skills -->
+    <section class="container py-4">
+        <h2 class="mb-4">Development Skills</h2>
+        <div class="card-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 20px;">
+
+            <div class="skill-card"><i class="fab fa-python fa-lg"></i> Python</div>
+            <div class="skill-card"><i class="fas fa-code fa-lg"></i> C++</div>
+            <div class="skill-card"><i class="fas fa-robot fa-lg"></i> Machine Learning</div>
+            <div class="skill-card"><i class="fas fa-brain fa-lg"></i> Deep Learning</div>
+            <div class="skill-card">
+                <img src="https://img.icons8.com/color/48/000000/power-bi.png" width="20" style="margin-right: 8px;">
+                Power BI
+            </div>
+            <div class="skill-card">
+                <img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019--v1.png" width="20"
+                    style="margin-right: 8px;"> MS Excel
+            </div>
+            <div class="skill-card"><i class="fas fa-database fa-lg"></i> MySQL</div>
+            <div class="skill-card"><i class="fas fa-chart-bar fa-lg"></i> Data Visualization</div>
+            <div class="skill-card"><i class="fab fa-html5 fa-lg"></i> HTML</div>
+            <div class="skill-card"><i class="fab fa-css3-alt fa-lg"></i> CSS</div>
+            <div class="skill-card"><i class="fab fa-js-square fa-lg"></i> JavaScript</div>
+            <div class="skill-card"><i class="fab fa-bootstrap fa-lg"></i> Bootstrap</div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+<section class="container py-4">
+    <h2>Projects</h2>
+    <div class="scrolling-wrapper d-flex overflow-auto flex-nowrap gap-3 pb-3">
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">Heart Disease Prediction</h5>
+          <p class="card-text">Supervised ML model with 87% accuracy to predict heart disease possibility.</p>
+          <p>Python, Machine Learning</p>
+          <a href="https://github.com/KushagraJha03/finalreview_gan" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">Credit Card Dashboard</h5>
+          <p class="card-text">Power BI dashboard for credit card insights.</p>
+          <a href="https://github.com/KushagraJha03/Credit-Card-Record-Dashboard" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">Image Blur Classification</h5>
+          <p class="card-text">DL-based model detecting blur in images with 89% accuracy.</p>
+          <a href="https://github.com/KushagraJha03/IBC-FINAL-REVIEW" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">Adidas Sales Dashboard</h5>
+          <p class="card-text">Sales insights using Power BI across product lines.</p>
+          <a href="https://github.com/KushagraJha03/Sales-Dashboard" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">Loan Grant Prediction</h5>
+          <p class="card-text">ML-based model predicting loan eligibility.</p>
+          <a href="https://github.com/KushagraJha03/Loan-Prediction-Model" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <div class="card skill-card transition-card flex-shrink-0" style="width: 270px; min-height: 230px;">
+        <div class="card-body">
+          <h5 class="card-title">News Web App</h5>
+          <p class="card-text">Dynamic app showing 500+ global news articles daily.</p>
+          <a href="https://github.com/KushagraJha03/News_Web_App" class="btn btn-primary btn-github" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Contact Section -->
+    <section class="container py-5">
+        <h2>Contact Me</h2>
+        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
+            opportunities.</p>
+        <ul>
+            <li><strong>Name:</strong> Kushagra Jha</li>
+            <li><strong>Address:</strong> Vikaspuri, New Delhi, India</li>
+            <li><strong>Email:</strong> <a href="mailto:jha.kushagra03@gmail.com">jha.kushagra03@gmail.com</a></li>
+            <li><strong>Languages Known:</strong> Hindi, English</li>
+        </ul>
+        <form action="https://formspree.io/f/xrbqokkb" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-github">Send</button>
+        </form>
+        
+    </section>
+
+</body>
+
+
+</html>
